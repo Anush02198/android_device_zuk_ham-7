@@ -218,6 +218,9 @@ BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 # Missing Dependencies
 ALLOW_MISSING_DEPENDENCIES=true
 
+#Charging info
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO+
+
 #Enable dexpreopt to speed boot time
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
