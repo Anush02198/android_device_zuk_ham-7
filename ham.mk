@@ -211,6 +211,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_treble=true \
     persist.camera.4k2k.enable=1
 
+#Radio
+PRODUCT_PACKAGES += \
+	android.hardware.radio@1.1-impl \
+
+
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp_policy/mediacodec.policy:system/vendor/etc/seccomp_policy/mediacodec.policy \
