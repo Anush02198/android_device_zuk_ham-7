@@ -24,7 +24,7 @@ $(call inherit-product, device/zuk/ham/ham.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lluvia/config/common_full_phone.mk)
-$(call inherit-product, vendor/lluvia/config/caf_fw.mk)
+$(call inherit-product, vendor/lluvia/config/common.mk)
 
 PRODUCT_NAME := lluvia_ham
 PRODUCT_DEVICE := ham
